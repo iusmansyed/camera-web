@@ -63,11 +63,16 @@ const Address = () => {
                     <input type="text" name="" id="" value={address} onChange={(e) => setAddress(e.target.value)} placeholder='please enter your address' />
                     <h5 style={{ opacity: err ? 1 : 0, transition: "0.3s" }}>Please fill the feild</h5>
                   </div>
+
+                </div>
+                <div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14479.871214496838!2d67.05680855!3d24.8649492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1721988249637!5m2!1sen!2s" width={"100%"} height={"450"} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <Buttons text={"next"} />
                 <Buttons text={"back"} float={"left"} onclick={handleGoBack} />
               </form>
             </div>
+
           </div>
         </div>
       </div>

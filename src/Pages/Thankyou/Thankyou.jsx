@@ -69,9 +69,7 @@ const Thankyou = () => {
               {/* <a href={state} download={state}>download</a> */}
               <Buttons text={"download"} onclick={handleDownload} />
             </div>
-            <div className={styles.form}>
-
-            </div>
+      
           </div>
         </div>
       </div>
