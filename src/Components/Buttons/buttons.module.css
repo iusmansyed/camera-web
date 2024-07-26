@@ -28,3 +28,9 @@
 .button:hover::before {
     width: 100%;
 }
+
+@media (max-width:320px) {
+    .button{
+        float:  left !important;
+    }
+}

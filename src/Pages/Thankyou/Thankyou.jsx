@@ -25,7 +25,7 @@ const Thankyou = () => {
     // Create a formatted string for the PDF content
     const content = `
 
-    
+
       Name: ${data.name}
       Address: ${data.address}
       Postal Code: ${data.postalCode}
@@ -59,13 +59,13 @@ const Thankyou = () => {
   };
   return (
     <section className={styles.home}>
-      <ModalComp data={data} show={show} open={handleShow} close={handleClose}/>
+      <ModalComp data={data} show={show} open={handleShow} close={handleClose} />
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
             <div className={styles.headingWrapper} data-aos="fade-right" data-aos-duration="3000">
-              <h1 data-aos="fade-right" data-aos-duration="3000">Thank you {state.state}, Here is a customized proposal for you </h1>
-              <Buttons text={"view"} onclick={()=>setShow(true)} />
+              <h1 data-aos="fade-right" data-aos-duration="3000">Thank you <span>{state.state}</span>, Here is a customized proposal for you </h1>
+              <Buttons text={"view"} onclick={() => setShow(true)} />
               {/* <a href={state} download={state}>download</a> */}
               <Buttons text={"download"} onclick={handleDownload} />
             </div>

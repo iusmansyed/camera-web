@@ -59,7 +59,7 @@ const Address = () => {
                     </select>
                     <h5 style={{ opacity: err ? 1 : 0, transition: "0.3s", marginTop: "20px" }}>Please fill the feild</h5>
                   </div>
-                  <div style={{ width: "50%" }}>
+                  <div className={styles.imap}>
                     <input type="text" name="" id="" value={address} onChange={(e) => setAddress(e.target.value)} placeholder='please enter your address' />
                     <h5 style={{ opacity: err ? 1 : 0, transition: "0.3s" }}>Please fill the feild</h5>
                   </div>
