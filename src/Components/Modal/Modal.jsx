@@ -19,6 +19,7 @@ const ModalComp = (props) => {
         <Modal.Body>
           <ul className={styles.list}>
             <li><img src={data.images} alt="" width={"60%"}/></li>
+            <li><span>Name:</span> {data.name}</li>
             <li><span>Address:</span> {data.address}</li>
             <li><span>Postal Code:</span> {data.postalCode}</li>
             <li><span>Property:</span> {data.property}</li>

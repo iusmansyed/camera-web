@@ -24,6 +24,8 @@ const Thankyou = () => {
   const handleDownload = () => {
     // Create a formatted string for the PDF content
     const content = `
+
+    
       Name: ${data.name}
       Address: ${data.address}
       Postal Code: ${data.postalCode}
